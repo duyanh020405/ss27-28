@@ -1,0 +1,13 @@
+-Callback function có thể được hiểu nôm na như sau: callback tức là ta truyền một đoạn code (Hàm A) 
+này vào một đoạn code khác (Hàm B). Tới một thời điểm nào đó, Hàm A sẽ được hàm B gọi lại (callback). 
+Javascript là một ngôn ngữ lập trình hướng sự kiện và bất đồng bộ nên callback function đóng vai trò rất quan trọng, bạn sẽ truyền một callback function vào các sự kiện và xử lý bất đồng bộ đó..
+-Một hàm hỗ trợ callback function thì chắc chắn trong code xử lý của nó sẽ có gọi đến để thực thi hàm callback đó, nhưng vấn đề nó gọi tại vị trí nào trong hàm là điều chúng ta không hề biết, trừ khi chúng ta tự viết nó. Như ở phần 
+callback là gì mình có đưa ra một số ví dụ về truyền tham số cho callback function, các tham số này sẽ phụ thuộc vào hàm cha (hàm xử lý chính), nếu hàm cha cho phép bạn truyền 3 tham số thì bạn chỉ
+được truyền 3 tham số, nếu bạn truyền nhiều hơn thì cũng không có tác dụng gì. 
+Chúng ta có thể truyền hàm callback vào tương tự như tham số bình thường, như cách chúng ta vẫn làm với các kiểu dữ liệu khác vậy.
+Nghĩa là khi truyền một callback vào một hàm khác thì callback tuy nó là một hàm nhưng sẽ không có dấu "()" sau tên hàm.
+Điều đó giúp cho hàm callback không được thực thi, mà chỉ được truyền vào như một tham số mà thôi.
+-1. Tham số truyền vào phải là một function
+-2. Cẩn thận với this khi hàm callback nằm trong object
+=3. Khắc phục this khi hàm callback nằm trong object
+=4. Callback Hell

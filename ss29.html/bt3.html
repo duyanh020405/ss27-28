@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function a(){
+            regexp = /^[a-z]/;
+            var arr = 'duy anh dep trai'
+            count =0
+            for(let i =0 ; i<arr.length;i++){
+                if(regexp.test(arr[i])){
+                    count++
+
+                }
+            }
+            console.log(count)
+
+        }
+        a()
+    </script>
+</body>
+</html>
